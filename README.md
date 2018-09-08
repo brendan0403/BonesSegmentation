@@ -42,7 +42,7 @@ Check the notebook for more details.
 The architecture was inspired by [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/)
 
 
-![unet](https://user-images.githubusercontent.com/39532549/45259592-af715180-b38d-11e8-88ec-e378b620c419.PNG)
+![unet](https://user-images.githubusercontent.com/39532549/45259622-23135e80-b38e-11e8-900c-3c56b398ccd7.PNG)
 
 
 
