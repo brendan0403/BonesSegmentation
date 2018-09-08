@@ -17,7 +17,7 @@ Give examples
 
 ### Data
 
-The original dataset is from * [SKI10 contest](http://www.ski10.org/) - It is composed of 100 MRIs and their corresponding segmentations.
+The original dataset is from [SKI10 contest](http://www.ski10.org/) - It is composed of 100 MRIs and their corresponding segmentations. I am not allowed to upload the dataset. Check their [website](http://www.ski10.org/) to download the full dataset.
 
 ![ski10 slice](https://user-images.githubusercontent.com/39532549/45259360-43d8b580-b388-11e8-8754-e97a64866b7f.PNG)
 
