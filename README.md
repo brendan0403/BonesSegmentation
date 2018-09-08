@@ -44,6 +44,9 @@ Explain how to run the automated tests for this system
 
 Explain what these tests test and why
 
+![pre processing](https://user-images.githubusercontent.com/39532549/45259388-ebee7e80-b388-11e8-9f30-b2cfb77bf062.PNG)
+
+
 ```
 Give an example
 ```
