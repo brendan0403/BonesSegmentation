@@ -66,7 +66,7 @@ Give an example
 
 ## Networks combination
 
-![combination](https://user-images.githubusercontent.com/39532549/45259484-64563f00-b38b-11e8-8ff3-efcfb744846f.PNG)
+![combination](https://user-images.githubusercontent.com/39532549/45259539-a2079780-b38c-11e8-99ec-eaea68e99af1.PNG)
 
 Add additional notes about how to deploy this on a live system
 
