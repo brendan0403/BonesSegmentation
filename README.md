@@ -17,27 +17,12 @@ Give examples
 
 ### Data
 
-The original dataset is from [SKI10 contest](http://www.ski10.org/) - It is composed of 100 MRIs and their corresponding segmentations. I am not allowed to upload the dataset. Check their [website](http://www.ski10.org/) to download the full dataset.
+The original dataset is from [SKI10 contest](http://www.ski10.org/) - It is composed of 100 MRIs and their corresponding segmentations. 
 
 ![ski10 slice](https://user-images.githubusercontent.com/39532549/45259360-43d8b580-b388-11e8-8754-e97a64866b7f.PNG)
 
-Say what the step will be
+I am not allowed to upload the dataset. Check SKI10 [website](http://www.ski10.org/) to download the full dataset.
 
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
 
 ### Pre-processing
 
@@ -49,20 +34,24 @@ Below are the steps to pre-process the labels.
 
 Check the notebook for more details.
 
-```
-Give an example
-```
 
-### Training
+### Network
 
-Explain what these tests test and why
+## Model
+
+The architecture was inspired by [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/)
+
+
+![unet](https://user-images.githubusercontent.com/39532549/45259592-af715180-b38d-11e8-88ec-e378b620c419.PNG)
+
+
+
+## Training
+
 
 ![training](https://user-images.githubusercontent.com/39532549/45259475-26591b00-b38b-11e8-84aa-d9b5c9164c26.png)
 
 
-```
-Give an example
-```
 
 ## Networks combination
 
