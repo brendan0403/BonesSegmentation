@@ -44,7 +44,8 @@ Explain how to run the automated tests for this system
 
 Explain what these tests test and why
 
-![pre processing](https://user-images.githubusercontent.com/39532549/45259388-ebee7e80-b388-11e8-9f30-b2cfb77bf062.PNG)
+![pre processing2](https://user-images.githubusercontent.com/39532549/45259399-25bf8500-b389-11e8-8eec-9dbbf6be076b.PNG)
+
 
 
 ```
