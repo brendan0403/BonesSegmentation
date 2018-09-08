@@ -48,16 +48,27 @@ The architecture was inspired by [U-Net: Convolutional Networks for Biomedical I
 
 ## Training
 
+Training on 150 epochs takes around 8 hours with a Nvidia geforce gtx 1080 TI (batch size=32).
+However 60 epochs are enough.
 
 ![training](https://user-images.githubusercontent.com/39532549/45259475-26591b00-b38b-11e8-84aa-d9b5c9164c26.png)
 
-
+For the training I used the DICE coefficient as a cost function.
+Check the notebook training.ipynb for hyperparameters.
 
 ## Networks combination
 
+In addition to network optimization, I was trying to come up with ideas to improve my segmentations thanks to pre-processing or post-processing. I had the idea to combine 3 U-net neural networks. My concept was to train each of them for a different view and then combine the results.
+
+After slightly changing the pre-processing and training the three networks independently I had to find a way to combine their segmentations.
+The main challenge to combine the different segmentations is that the volumes are not cubic. Indeed, even if every slices are resized in 128x128 during the pre-processing, the number of slices for each plane is not the same because originally the volumes were not cubic.
+Therefore, to combine the results of the three segmentations, it is necessary to group the segmented slices of the same MRI into a volume for each network and then to rotate and resize the segmented volumes so that they have the same dimensions and orientation. 
+
+In the notebook Networks combination - DICE Calculation.ipynb you can either resize the volume in 128x128x128 or resize it to its original size.
+You can also calculate the DICE coefficient between the combined segmentation and the gold standard for a whole volume. DICE coefficient is also calculated for the Sagittal, Axial, and Coronnal segmentation independently.
+
 ![combination](https://user-images.githubusercontent.com/39532549/45259539-a2079780-b38c-11e8-99ec-eaea68e99af1.PNG)
 
-Add additional notes about how to deploy this on a live system
 
 ## Results
 
