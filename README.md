@@ -41,31 +41,41 @@ Explain how to run the automated tests for this system
 
 ### Pre-processing
 
-
-Explain what these tests test and why
+Run the notebook Pre-processing.ipynb to pre-process the data. 
+Below are the steps to pre-process the labels.
 
 ![pre processing3](https://user-images.githubusercontent.com/39532549/45259411-733bf200-b389-11e8-9cae-1984b5de1a3c.PNG)
 
 
-
+Check the notebook for more details.
 
 ```
 Give an example
 ```
 
-### And coding style tests
+### Training
 
 Explain what these tests test and why
 
+![training](https://user-images.githubusercontent.com/39532549/45259475-26591b00-b38b-11e8-84aa-d9b5c9164c26.png)
+
+
 ```
 Give an example
 ```
 
-## Deployment
+## Networks combination
+
+![combination](https://user-images.githubusercontent.com/39532549/45259484-64563f00-b38b-11e8-8ff3-efcfb744846f.PNG)
 
 Add additional notes about how to deploy this on a live system
 
-## Built With
+## Results
+
+
+![resultsv](https://user-images.githubusercontent.com/39532549/45259532-5bb23880-b38c-11e8-8e95-d97a9195b9a3.PNG)
+
+
 
 * [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
 * [Maven](https://maven.apache.org/) - Dependency Management
