@@ -19,7 +19,7 @@ Give examples
 
 The original dataset is from * [SKI10 contest](http://www.ski10.org/) - It is composed of 100 MRIs and their corresponding segmentations.
 
-![alt text](images/ski10 slice.PNG?raw=true "Slice from SKI10 dataset")
+![ski10 slice](https://user-images.githubusercontent.com/39532549/45259360-43d8b580-b388-11e8-8754-e97a64866b7f.PNG)
 
 Say what the step will be
 
