@@ -62,7 +62,7 @@ Check the notebook training.ipynb for more hyperparameters.
 
 
 
-## Networks combination
+### Networks combination
 
 In addition to network optimization, I was trying to come up with ideas to improve my segmentations thanks to pre-processing or post-processing. I had the idea to combine 3 U-net neural networks. My concept was to train each of them for a different view and then combine the results.
 
@@ -76,7 +76,7 @@ You can also calculate the DICE coefficient between the combined segmentation an
 ![combination](https://user-images.githubusercontent.com/39532549/45259539-a2079780-b38c-11e8-99ec-eaea68e99af1.PNG)
 
 
-## Results
+### Results
 
 Segmentations of the test set are very accurate, the average DICE coefficient is 0.98.
 
@@ -87,7 +87,7 @@ Test set segmentations visualized on Slicer 3D :
 
 
 
-## Authors
+### Authors
 
 * **Brendan Robert** - *AMMI Lab* - University of Alberta
 
