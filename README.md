@@ -3,7 +3,7 @@
 
 This project is the segmentation of knee bones on MRI images using a U-net network.
 
-### Prerequisites
+## Prerequisites
 
 This project depends on the following libraries:
 
@@ -19,7 +19,7 @@ Matplotlib
 ```
 It has been developped using Python 3.6, Anaconda and Jupyter Notebook.
 
-### Data
+## Data
 
 The original dataset is from [SKI10 contest](http://www.ski10.org/) - It is composed of 100 MRIs and their corresponding segmentations. 
 
@@ -28,7 +28,7 @@ The original dataset is from [SKI10 contest](http://www.ski10.org/) - It is comp
 I am not allowed to upload the dataset. Check SKI10 [website](http://www.ski10.org/) to download the full dataset.
 
 
-### Pre-processing
+## Pre-processing
 
 As I use U-net 2D it is necessary to provide images at the input of the network. I chose to provide the network with 128x128 slices because the GPU memory of my machine did not allow more.
 Below are the steps to pre-process the SKI10 labels.
@@ -39,9 +39,9 @@ Run the notebook Pre-processing.ipynb to pre-process the data and check it for m
 
 
 
-### Network
+## Network
 
-## Model
+### Model
 
 The architecture was inspired by [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/)
 I tried several architectures and this one had the best results.
@@ -51,7 +51,7 @@ I tried several architectures and this one had the best results.
 
 
 
-## Training
+### Training
 
 Once the data has been pre-processed, the network is ready to be trained. 
 Training on 150 epochs takes around 8 hours with a Nvidia geforce gtx 1080 TI (batch size=32). However 60 epochs are enough. 
@@ -62,21 +62,21 @@ Check the notebook training.ipynb for more hyperparameters.
 
 
 
-### Networks combination
+## Networks combination
 
-In addition to network optimization, I was trying to come up with ideas to improve my segmentations thanks to pre-processing or post-processing. I had the idea to combine 3 U-net neural networks. My concept was to train each of them for a different view and then combine the results.
+In addition to the hyperparameters tuning, I tried to improve my segmentations thanks to pre-processing or post-processing. I also had the idea to combine three U-net neural networks. The concept was to train each of them for a different plane (Sagittal, Axial and Coronal) and then combine the results.
 
 After slightly changing the pre-processing and training the three networks independently I had to find a way to combine their segmentations.
-The main challenge to combine the different segmentations is that the volumes are not cubic. Indeed, even if every slices are resized in 128x128 during the pre-processing, the number of slices for each plane is not the same because originally the volumes were not cubic.
-Therefore, to combine the results of the three segmentations, it is necessary to group the segmented slices of the same MRI into a volume for each network and then to rotate and resize the segmented volumes so that they have the same dimensions and orientation. 
+The main challenge to combine the different segmentations is that the volumes are not cubic. Indeed, even if every slices are resized in 128x128 during the pre-processing, the number of slices for each plane is not the same because originally the volumes are not cubic.
+Therefore, to combine the results of the three segmentations, it is necessary to aggregate the segmented slices of the same MRI into a volume for each network and then to rotate and resize the segmented volumes so that they have the same dimensions and orientation. 
 
-In the notebook Networks combination - DICE Calculation.ipynb you can either resize the volume in 128x128x128 or resize it to its original size.
-You can also calculate the DICE coefficient between the combined segmentation and the gold standard for a whole volume. DICE coefficient is also calculated for the Sagittal, Axial, and Coronnal segmentation independently.
+In the notebook Networks combination - DICE Calculation.ipynb it is possible to resize the segmentations in 128x128x128 or to its original size.
+To evaluate the segmentation, DICE coefficient between the combined segmentation and the gold standard is calculated for a whole volume. DICE coefficient is also calculated for the Sagittal, Axial, and Coronnal segmentation independently. This way, 
 
 ![combination](https://user-images.githubusercontent.com/39532549/45259539-a2079780-b38c-11e8-99ec-eaea68e99af1.PNG)
 
 
-### Results
+## Results
 
 Segmentations of the test set are very accurate, the average DICE coefficient is 0.98.
 
@@ -87,7 +87,7 @@ Test set segmentations visualized on Slicer 3D :
 
 
 
-### Authors
+## Authors
 
 * **Brendan Robert** - *AMMI Lab* - University of Alberta
 
