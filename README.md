@@ -54,7 +54,8 @@ Training on 150 epochs takes around 8 hours with a Nvidia geforce gtx 1080 TI (b
 For the training I used the DICE coefficient as a cost function.
 Check the notebook training.ipynb for more hyperparameters.
 
-![training](https://user-images.githubusercontent.com/39532549/45259475-26591b00-b38b-11e8-84aa-d9b5c9164c26.png)
+![train loss](https://user-images.githubusercontent.com/39532549/45259782-1abd2280-b392-11e8-9c04-6d5efd2df5ca.PNG)
+
 
 
 ## Networks combination
