@@ -76,7 +76,7 @@ You can also calculate the DICE coefficient between the combined segmentation an
 
 Segmentations of the test set are very accurate, the average DICE coefficient is 0.98.
 
-Segmentations of test set volumes visualized is Slicer 3D :
+Test set segmentations visualized on Slicer 3D :
 
 ![resultsv](https://user-images.githubusercontent.com/39532549/45259532-5bb23880-b38c-11e8-8e95-d97a9195b9a3.PNG)
 
