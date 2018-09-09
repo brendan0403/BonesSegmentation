@@ -26,13 +26,13 @@ I am not allowed to upload the dataset. Check SKI10 [website](http://www.ski10.o
 
 ### Pre-processing
 
-Run the notebook Pre-processing.ipynb to pre-process the data. 
-Below are the steps to pre-process the labels.
+As I use U-net 2D it is necessary to provide images at the input of the network. I chose to provide the network with 128x128 slices because the GPU memory of my machine did not allow more.
+Below are the steps to pre-process the SKI10 labels.
 
 ![pre processing3](https://user-images.githubusercontent.com/39532549/45259411-733bf200-b389-11e8-9cae-1984b5de1a3c.PNG)
 
+Run the notebook Pre-processing.ipynb to pre-process the data and check it for more details.
 
-Check the notebook for more details.
 
 
 ### Network
@@ -40,6 +40,7 @@ Check the notebook for more details.
 ## Model
 
 The architecture was inspired by [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/)
+I tried several architectures and this one had the best results.
 
 
 ![unet](https://user-images.githubusercontent.com/39532549/45259622-23135e80-b38e-11e8-900c-3c56b398ccd7.PNG)
@@ -48,13 +49,13 @@ The architecture was inspired by [U-Net: Convolutional Networks for Biomedical I
 
 ## Training
 
-Training on 150 epochs takes around 8 hours with a Nvidia geforce gtx 1080 TI (batch size=32).
-However 60 epochs are enough.
+Once the data has been pre-processed, the network is ready to be trained. 
+Training on 150 epochs takes around 8 hours with a Nvidia geforce gtx 1080 TI (batch size=32). However 60 epochs are enough. 
+For the training I used the DICE coefficient as a cost function.
+Check the notebook training.ipynb for more hyperparameters.
 
 ![training](https://user-images.githubusercontent.com/39532549/45259475-26591b00-b38b-11e8-84aa-d9b5c9164c26.png)
 
-For the training I used the DICE coefficient as a cost function.
-Check the notebook training.ipynb for hyperparameters.
 
 ## Networks combination
 
