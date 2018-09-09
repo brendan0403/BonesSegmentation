@@ -60,7 +60,7 @@ Check the notebook training.ipynb for more hyperparameters.
 
 ![train loss](https://user-images.githubusercontent.com/39532549/45259782-1abd2280-b392-11e8-9c04-6d5efd2df5ca.PNG)
 
-
+The network weight files are too large to be uploaded on Github. Train the networks by yourself or contact me.
 
 ## Networks combination
 
