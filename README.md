@@ -1,7 +1,7 @@
 
 # Knee MRI Bones segmentation by Deep Learning
 
-This project is the segmentation of knee bones on MRI images using a U-net network.
+This project is the segmentation of knee bones on MRI images using a U-net network. It was part of my end-of-studies internship at AMMI laboratory in University of Alberta.
 
 ## Prerequisites
 
