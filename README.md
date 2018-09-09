@@ -3,10 +3,6 @@
 
 This project is the segmentation of knee bones on MRI images using a U-net network.
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
 ### Prerequisites
 
 This project depends on the following libraries:
@@ -21,6 +17,7 @@ Scipy
 Skimage
 Matplotlib
 ```
+It has been developped using Python 3.6, Anaconda and Jupyter Notebook.
 
 ### Data
 
