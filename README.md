@@ -71,7 +71,7 @@ The main challenge to combine the different segmentations is that the volumes ar
 Therefore, to combine the results of the three segmentations, it is necessary to aggregate the segmented slices of the same MRI into a volume for each network and then to rotate and resize the segmented volumes so that they have the same dimensions and orientation. 
 
 In the notebook Networks combination - DICE Calculation.ipynb it is possible to resize the segmentations in 128x128x128 or to its original size.
-To evaluate the segmentation, DICE coefficient between the combined segmentation and the gold standard is calculated for a whole volume. DICE coefficient is also calculated for the Sagittal, Axial, and Coronnal segmentation independently. This way, 
+To evaluate the segmentation, DICE coefficient between the combined segmentation and the gold standard is calculated for a whole volume. DICE coefficient is also calculated for the Sagittal, Axial, and Coronnal segmentation independently.
 
 ![combination](https://user-images.githubusercontent.com/39532549/45259539-a2079780-b38c-11e8-99ec-eaea68e99af1.PNG)
 
